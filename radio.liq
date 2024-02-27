@@ -69,6 +69,15 @@ radioproc =
 # Output StereoTool sound to a dummy output since we only use it for MicroMPX
 output.dummy(radioproc)
 
+# Output a lossless ogg/flac stream
+output_icecast_stream(
+  format=%ogg(%flac),
+  description=
+    "Studio to Transmitter (ongecomprimeerde audio)",
+  mount="/zuidwest.stl",
+  source=radio
+)
+
 # Output a high bitrate mp3 stream
 output_icecast_stream(
   format=%mp3(bitrate = 192, samplerate = 48000),

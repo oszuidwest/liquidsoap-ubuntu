@@ -85,7 +85,6 @@ cat <<EOF > "$ICECAST_XML"
     <logdir>/var/log/icecast2</logdir>
     <webroot>/usr/share/icecast2/web</webroot>
     <adminroot>/usr/share/icecast2/admin</adminroot>
-    <alias source="/zuidwest.stl" destination="/zuidwest.mp3"/>
     <alias source="/" destination="/status.xsl"/>
   </paths>
 
