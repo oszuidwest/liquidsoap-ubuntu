@@ -106,20 +106,11 @@ output_icecast_stream(
   source=radio
 )
 
-# Output a high bitrate AAC stream
+# Output a lossless ogg/flac stream
 output_icecast_stream(
-  format=
-    %fdkaac(
-      channels = 2,
-      samplerate = 48000,
-      bitrate = 576,
-      afterburner = true,
-      aot = 'mpeg4_aac_lc',
-      transmux = 'adts',
-      sbr_mode = true
-    ),
+  format=%ogg(%flac),
   description=
-    "Transport Stream (576kbit AAC)",
+    "Transport Stream (ogg/flac)",
   mount="/zuidwest.stl",
   source=radio
 )
