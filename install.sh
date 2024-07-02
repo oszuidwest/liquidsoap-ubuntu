@@ -16,7 +16,7 @@ STEREOTOOL_VERSION="1021"
 STEREOTOOL_BASE_URL="https://download.thimeo.com"
 
 # General options
-SUPPORTED_OS=("bookworm" "jammy")
+SUPPORTED_OS=("bookworm" "jammy" "noble")
 TIMEZONE="Europe/Amsterdam"
 DIRECTORIES=("/etc/liquidsoap" "/var/audio")
 

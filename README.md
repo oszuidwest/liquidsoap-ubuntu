@@ -20,7 +20,7 @@ The system design involves delivering the broadcast through two pathways. Liquid
 - **liquidsoap.service**: A systemd service file for managing Liquidsoap.
 
 ## Compatibility
-1. Tested with Ubuntu 22.04 or Debian 12.
+1. Tested with Ubuntu 22.04, 24.04 or Debian 12.
 2. Supports x86_64 or ARM64 system architectures (e.g., Ampere Altra, Raspberry Pi). Note: StereoTool MicroMPX is currently not well-supported on ARM architectures.
 3. Requires an internet connection for script dependencies.
 
